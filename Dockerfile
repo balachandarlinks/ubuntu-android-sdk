@@ -23,3 +23,6 @@ ENV PATH $ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 RUN chmod -R 744 $ANDROID_HOME
 
 VOLUME ["/opt/android/android-sdk-linux"]
+
+# CLEAN UP
+RUN rm android-sdk_r23.0.2-linux.tgz
